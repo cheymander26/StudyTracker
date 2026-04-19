@@ -28,8 +28,9 @@
 
                 <div class="test-controls">
                     <div class="control-group">
-                        <label for="test-duration">Test Duration</label>
+                        <label for="test-duration">Session Length</label>
                         <select id="test-duration">
+							<option value="1">1 minute</option>
                             <option value="5">5 minutes</option>
                             <option value="10">10 minutes</option>
                             <option value="15">15 minutes</option>
@@ -52,7 +53,7 @@
                         </select>
                     </div>
 
-                    <button id="generate-test-btn" type="button">Generate Test</button>
+                    <button id="generate-test-btn" type="button">Start Session</button>
                 </div>
             </div>
 
@@ -78,7 +79,7 @@
             </div>
 
             <div class="card stat-card">
-                <h2>Your Statistics</h2>
+                <h2>Progress Overview</h2>
 
                 <h3>Total Questions</h3>
                 <p id="question-count">0</p>
@@ -92,20 +93,20 @@
                 <h3>Best Streak</h3>
                 <p id="streak">0</p>
 
-                <h3>Last Practiced</h3>
+                <h3>Last Reviewed</h3>
                 <p id="last-practiced">Never</p>
             </div>
         </section>
 
         <main class="main-layout">
             <section class="card form-section">
-                <h3>Add Question</h3>
+                <h3>Add to Question Bank</h3>
 
                 <form id="question-form">
                     <label for="question">Question</label>
                     <textarea
                         id="question"
-                        placeholder="Enter an interview question..."
+                        placeholder="Enter a question..."
                         required
                     ></textarea>
 
@@ -139,7 +140,7 @@
             </section>
 
             <section class="card list-section">
-                <h3>Your Questions</h3>
+                <h3>Question Bank</h3>
 
                 <div class="filters">
                     <input
